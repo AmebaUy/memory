@@ -280,7 +280,33 @@ textarea.form-control {
 	transition: all 0.5s;
 }
 
+/*estilos para el popup de email enviado*/
+#mail_sended{
+	position: fixed;
+	background: rgba(0,0,0,.6);
+	width: 100vw;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	z-index: 999;
+	display: none;
+}
 
+#menssage_box{
+	position: absolute;
+	background: #fff;
+	padding: 50px;
+	-ms-transform: scale(0,0); /* IE 9 */
+    -webkit-transform: scale(0,0); /* Safari */
+    transform: scale(0,0);
+
+    transition: all 0.5s;
+}
+
+#menssage_box h3{
+	color: #BF000E;
+	margin: 0;
+}
 /*----------------------------
 		   FOOTER
 ----------------------------*/
