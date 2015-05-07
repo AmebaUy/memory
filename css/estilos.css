@@ -1,0 +1,332 @@
+
+
+/*----------------------------
+			COLORES
+----------------------------*/
+/* rojo #bf000e */
+
+
+/*----------------------------
+			GENERAL
+----------------------------*/
+html,body {
+	font-size: 1em;
+}
+
+/*----------------------------
+		    TITULOS
+----------------------------*/
+h1,h2,h3,h4,h5,h6 {
+	font-family:'Roboto Condensed', helvetica, arial, sans-serif; 
+}
+h3 {
+	font-weight: 600;
+	font-size:1.6em;
+	padding: 0 20px;
+}
+
+/*----------------------------
+			NAVBAR
+----------------------------*/
+
+.navbar {
+	border-radius: 0;
+	margin-bottom: 0;
+	z-index: 3;
+}
+.navbar-default {
+	height: 85px;
+	border:none;
+	background-color: #bf000e;
+}
+.navbar-header {
+	float: none;
+	margin:0 auto !important;
+}
+.navbar-default .navbar-brand {
+	color: white;
+	margin-top: -10px;
+}
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+	color: white;
+	opacity: 0.9;
+}
+.navbar-default .navbar-toggle {
+	display: none;
+}
+.navbar-brand {
+	float: none;
+	display: block;
+}
+.navbar-brand>img {
+	margin: 0 auto;
+}
+/*----------------------------
+		  LAYERSLIDER
+----------------------------*/
+
+/*fix to position layer to the right*/
+.position-fix {
+	width:100% !important;
+	display:block;
+	position:relative;	
+}
+.position-fix img {
+	position: absolute;
+	right:0;
+}
+/*agrandar imagenes con links en hover*/
+.opacity img {
+	opacity: 0.8;
+}
+.opacity:hover img {
+	opacity: 1;
+}
+/*ocultar navegacion inferior*/
+.ls-bottom-nav-wrapper {
+	display: none;
+}
+
+
+
+/*----------------------------
+		  CONTAINER
+----------------------------*/
+.contenedor {
+	padding: 30px 20px;
+	margin-bottom: 60px;
+}
+
+/*----------------------------
+		  OWL CAROUSEL
+----------------------------*/
+.carousels {padding: 0 50px;}
+.owl-carousel .owl-wrapper-outer {
+	/*prevent navigation buuttons overlapping*/
+	z-index:2
+}
+.owl-container.uno{
+	margin-bottom: 60px;
+}
+.owl-container.dos {
+	margin-bottom: 30px;
+}
+.owl-carousel {
+	margin-top: 20px;
+}
+.owl-carousel .owl-item{
+	text-align: center;
+}
+.owl-carousel .owl-item img{
+	width: 90%;
+	opacity: 0.8;
+	transition: opacity 0.2s;
+}
+div[data-toggle="modal"] {
+	cursor: pointer;
+}
+/*efecto hover*/
+.owl-carousel .owl-item:hover img {
+	opacity: 1;
+}
+
+/*pagination*/
+.owl-pagination {display: none;}
+.owl-buttons {  
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	z-index:1;
+}
+.owl-prev,.owl-next {
+	position: absolute;
+  	top: 50%;
+  	margin-top: -10px !important;
+  	width: 25px;
+  	height: 30px;
+  	background-color: transparent !important;
+  	background-image: url('../img/arrows.png') !important;
+  	background-repeat: no-repeat;
+}
+.owl-prev {
+  	left: -40px;
+}
+.owl-next {
+  	right: -40px;
+  	background-position-x: right !important;
+}
+
+
+/*----------------------------
+		     MODAL
+----------------------------*/
+.modal {
+	padding-right:0 !important;
+}
+.modal-body {
+	padding: 0;
+}
+.modal-content {
+	border: 0;
+}
+.modal-header .close {
+	font-size: 40px;
+	line-height: 27px;
+	font-weight:100;
+}
+.modal-footer {
+	display: none;
+}
+
+
+/*----------------------------
+		   IFRAME
+----------------------------*/
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*----------------------------
+		  FORMULARIO
+----------------------------*/
+/*general*/
+.form-control {
+	height: 50px;
+	line-height:2em;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+input, button, select, textarea {
+	font-family: Muli, sans-serif;
+	font-weight: 300;
+	line-height: 2em;		
+}
+textarea.form-control {
+	padding: 12px;
+}
+
+/*titulo*/
+.formulario h2 {
+	text-align: center;
+	margin-bottom: 30px;
+}
+.formulario h2 .parte-1,
+.formulario h2 .parte-2 {
+	display: inline-block;
+	height: 65px;
+	background-image: url('../img/deja-tu-consulta.png');
+	background-repeat: no-repeat;
+}
+.formulario h2 .parte-1{
+	width: 250px;
+	background-position: left;
+}
+.formulario h2 .parte-2{
+	width: 436px;
+	background-position: right;
+}
+.opt{
+	padding:20px;
+}
+.formulario button {
+	width: 210px;
+	margin: 0 auto;
+	text-transform: uppercase;
+	background-color: #D50E1D;
+	color: white;
+	font-weight: 400;
+	display: block;
+	border:0;
+	padding: 10px 0;
+	font-family:'Roboto Condensed', helvetica, arial, sans-serif; 
+	font-size: 	1.2em;
+	font-weight: 600;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	-moz-appearance: none;
+	-webkit-appearance: none;		
+}
+.formulario button:hover,
+.formulario button:active,
+.formulario button:focus{
+	background-color: #EC2E3C;
+	color: white;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+/*boton desactivado si el formulario no es valido*/
+.btn-default.disabled, .btn-default[disabled], fieldset[disabled] .btn-default, .btn-default.disabled:hover, .btn-default[disabled]:hover, fieldset[disabled] .btn-default:hover, .btn-default.disabled:focus, .btn-default[disabled]:focus, fieldset[disabled] .btn-default:focus, .btn-default.disabled.focus, .btn-default[disabled].focus, fieldset[disabled] .btn-default.focus, .btn-default.disabled:active, .btn-default[disabled]:active, fieldset[disabled] .btn-default:active, .btn-default.disabled.active, .btn-default[disabled].active, fieldset[disabled] .btn-default.active {
+	background-color: #D50E1D;
+	color: white;
+	font-weight: 400;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+
+/*----------------------------
+		   FOOTER
+----------------------------*/
+footer {
+	background-color:#bf000e;
+	color:white;
+	padding: 35px 15px 15px 15px;
+	text-align: center;
+	position: relative;
+}
+
+footer h3 a {
+	display: inline-block;
+	position: relative;
+  	top: -10px;
+	width: 60px;
+	height: 2px;
+	border-top: 1px solid #ffed00;
+	border-bottom: 1px solid #ffed00;
+	border-radius: 3px;
+	margin: 0 20px;
+}
+
+footer span{
+	font-family: Muli, sans-serif;
+	color:#ffed00;
+	letter-spacing:-3px;
+	font-weight:400;
+}
+
+/*REDES SOCIALES*/
+.redes-sociales {
+	position: absolute;
+  	left: 50%;
+  	margin-left: -130px;
+  	top: -50px;
+}
+.redes-sociales a {
+	display: inline-block;
+	width:85px;
+	height:85px;
+	background-image: url('../img/iconos-sociales.png');
+	background-repeat: no-repeat;
+}
+.redes-sociales a.facebook {background-position:left top;}
+.redes-sociales a.twitter {background-position:center top;}
+.redes-sociales a.youtube {background-position:right top;}
+/*hover*/
+.redes-sociales a:hover {background-position-y:bottom; }

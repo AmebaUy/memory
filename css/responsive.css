@@ -1,0 +1,95 @@
+
+
+
+
+@media (max-width: 991px) {
+
+}
+
+@media (min-width: 768px) {
+	/*MODAL*/
+	.modal-dialog {
+	  margin: 30px auto;
+	}
+}
+
+@media (max-width: 767px) {
+	
+	.modal-dialog {
+	  margin: 50px auto;
+	}
+	
+	/*NAVBAR*/
+	.navbar-default {
+	  height: 75px;
+	}
+	.navbar-brand > img {
+		width:250px !important;
+	}
+	/*LAYERSLIDER*/
+	.position-fix img {
+		top:20px;
+		width: 300px;
+	}
+	/*CAROUSEL*/
+
+	.carousels {
+	  padding: 0 30px;
+	}
+	.owl-container.uno {
+	  margin-bottom: 30px;
+	}
+	.carousels h3 {
+		display: none;
+	}
+	.owl-container.dos {
+		margin-bottom: 0;
+	}
+	/*MODAL*/
+	.modal-content {
+		margin: 0 20px;
+	}
+	/*FORMULARIO*/
+	.formulario h2 .parte-1, .formulario h2 .parte-2 {
+		margin-bottom: -20px;
+	}
+	.formulario h2 .parte-1 {
+ 		width: 158px;
+  		background-size: 435px;
+  	}
+	.formulario h2 .parte-2 {
+ 		width: 276px;
+  		background-size: 435px;
+  	}
+  	/*FOOTER*/
+  	footer h3 {
+  		font-size: 1.5em;
+  	}
+}
+
+
+@media (max-width: 640px) {
+
+	/*NAVBAR*/
+	.navbar-default {
+	  height: 61px;
+	}
+	.navbar-brand > img {
+		width:200px !important;
+	}
+	/*LAYERSLIDER*/
+	.position-fix img {
+		top:0;
+	}
+	.position-fix img {
+		width: 250px;
+	}
+}
+
+@media (max-width: 480px) {
+	/*LAYERSLIDER*/
+	.position-fix img {
+		top:0;
+		width: 150px;
+	}
+}
