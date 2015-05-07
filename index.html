@@ -97,8 +97,8 @@
         <div class="owl-container uno">
           <h3>Mirá nuestros videos</h3>
           <div id="owl-demo1" class="owl-carousel owl-theme">
-                <div data-toggle="modal" data-target="#myModal"><img src="img/boxslide-01.jpg"></div>
-                <div><img src="img/boxslide-02.jpg"></div>
+                <div data-toggle="modal" data-target="#myModal" class="modal_videos" data-vid-src="https://www.youtube.com/embed/XNtXNKdWao8?rel=0&amp;showinfo=0"><img src="img/boxslide-01.jpg"></div>
+                <div data-toggle="modal" data-target="#myModal" class="modal_videos" data-vid-src="https://www.youtube.com/embed/9sORv1odSyQ?rel=0&amp;showinfo=0"><img src="img/boxslide-02.jpg"></div>
                 <div><img src="img/boxslide-03.jpg"></div>
                 <div><img src="img/boxslide-04.jpg"></div>
                 <div><img src="img/boxslide-05.jpg"></div>
@@ -140,7 +140,7 @@
             </div>
             <div class="modal-body">
               <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/XNtXNKdWao8?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen width="960" height="540"></iframe>
+                <!--acá se imprimen los iframes de youtube-->
               </div>
 
             </div>
@@ -249,47 +249,65 @@
     <!-- form validator -->
     <script src="js/validator.min.js" type="text/javascript"></script>
 
-    <!-- Layerslider -->
-    <script>
-      jQuery("#layerslider").layerSlider({
-        responsive: true,
-        responsiveUnder : 960,
-        autoStart: true,
-        skin: 'v5',
-        hoverPrevNext: false,
-        touchNav: true,
-        navPrevNext: true,
-        navStartStop: true,
-        navButtons: true,
-        pauseOnHover: true,
-        showBarTimer: false,
-        showCircleTimer: false,
-        thumbnailNavigation: 'disabled',
-        skinsPath: 'layerslider/skins/'
-      });
-    </script>
+<!-- Layerslider -->
+<script>
+  jQuery("#layerslider").layerSlider({
+    responsive: true,
+    responsiveUnder : 960,
+    autoStart: true,
+    skin: 'v5',
+    hoverPrevNext: false,
+    touchNav: true,
+    navPrevNext: true,
+    navStartStop: true,
+    navButtons: true,
+    pauseOnHover: true,
+    showBarTimer: false,
+    showCircleTimer: false,
+    thumbnailNavigation: 'disabled',
+    skinsPath: 'layerslider/skins/'
+  });
+</script>
 
-    <!-- Owl Carousel -->
-    <script type="text/javascript">
-        // Running the code when the document is ready
-        $(document).ready(function(){
+<!-- Owl Carousel -->
+<script type="text/javascript">
+  // Running the code when the document is ready
+  $(document).ready(function(){
 
-          // Calling Owl Carousel 1
-          $("#owl-demo1").owlCarousel({
-            navigation : true,
-            items:4,
-            slideSpeed:100
-          });
-          // Calling Owl Carousel 2
-          $("#owl-demo2").owlCarousel({
-            navigation : true,
-            items:4,
-            slideSpeed:100
-          });
-          //remover texto 'prev y next'
-          $('.owl-prev,.owl-next').empty();
-        });
-    </script>
+    // Calling Owl Carousel 1
+    $("#owl-demo1").owlCarousel({
+      navigation : true,
+      items:4,
+      slideSpeed:100
+    });
+    // Calling Owl Carousel 2
+    $("#owl-demo2").owlCarousel({
+      navigation : true,
+      items:4,
+      slideSpeed:100
+    });
+    //remover texto 'prev y next'
+    $('.owl-prev,.owl-next').empty();
+
+    //imprime el iframe
+    $('.modal_videos').click(function(){
+        iframePrint(this);
+    });
+    //remueve el iframe
+    $('.modal-header .close').click(removeIframe);
+  });
+
+
+function iframePrint(vidSrc){
+  var videoSrc = $(vidSrc).data('vid-src'); 
+  $('.video-container').html('<iframe src="'+videoSrc+'" frameborder="0" allowfullscreen width="960" height="540"></iframe>');
+}
+
+function removeIframe(){
+  $('.video-container').html('');
+}
+
+</script>
 
   </body>
 </html>
