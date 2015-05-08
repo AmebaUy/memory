@@ -7,6 +7,14 @@ $email = $_POST['email'];
 $empresa = $_POST['empresa'];
 $mensaje = $_POST['mensaje'];
 
+//incerting emails into db
+$db_connect = mysql_connect("mysql51-060.wc1.ord1.stabletransit.com","947663_memory","Jpv7bTa7dQWw");
+mysql_select_db("947663_memory");
+
+$pars_emailQuery = "INSERT INTO `contact_emails` VALUES ('', '$nombre', '$trabajode', '$email', '$empresa', '$mensaje')";
+$emailQuery = mysql_query($pars_emailQuery);
+
+//envio de mail
 $mailBody = '<p>Nombre: '.$nombre.'</p>';
 if(isset($_POST['empresa']) && $_POST['empresa'] != ''){
 $mailBody .= '<p>Empresa: '.$empresa.'</p>';
@@ -25,7 +33,7 @@ $mail->setFrom($email, $nombre);
 //Set an alternative reply-to address
 $mail->addReplyTo($email, $nombre);
 //Set who the message is to be sent to
-$mail->addAddress('novoanpablo@gmail.com', 'Pablo');
+$mail->addAddress('lmartinez@ameba.com.uy', 'Lucía');
 //encoding utf-8
 $mail->CharSet = 'UTF-8';
 //Set the subject line
@@ -44,7 +52,5 @@ if (!$mail->send()) {
 } else {
     header("Location: index.html?send=yes");
 }
-
-
 
 ?>
