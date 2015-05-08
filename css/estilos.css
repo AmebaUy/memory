@@ -286,16 +286,15 @@ textarea.form-control {
 	height: 100vh;
 	z-index: 999;
 	display: none;
+	opacity: 1;
+    transition: all 1s;
 }
 
 #menssage_box{
 	position: absolute;
 	background: #fff;
 	padding: 50px;
-	-ms-transform: scale(0,0); /* IE 9 */
-    -webkit-transform: scale(0,0); /* Safari */
-    transform: scale(0,0);
-
+	opacity: 0;
     transition: all 0.5s;
 }
 

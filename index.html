@@ -339,9 +339,9 @@ function fSendMessage(){
         'left': menssageBoxL
       });
 
-      $('#menssage_box').css('transform','scale(1,1)');
-      setTimeout(function(){ $('#menssage_box').css('transform','scale(0,0)'); }, 1500);
-      setTimeout(function(){ $('#mail_sended').css('display','none'); }, 2000);
+      $('#menssage_box').css('opacity','1');
+      setTimeout(function(){ $('#menssage_box').css('opacity','0'); $('#mail_sended').css('opacity','0');}, 2000);
+      setTimeout(function(){ $('#mail_sended').css('display','none'); }, 3000);
   }
 
 }
