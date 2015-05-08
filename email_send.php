@@ -7,6 +7,12 @@ $email = $_POST['email'];
 $empresa = $_POST['empresa'];
 $mensaje = $_POST['mensaje'];
 
+//logo root construction
+$rootFolder_Array = explode('/', dirname(__FILE__));
+$rootArrayCount = count($rootFolder_Array)-1;
+$rootFolder = $rootFolder_Array[$rootArrayCount];
+$logoSrc = 'http://'.$_SERVER['SERVER_NAME'].'/'.$rootFolder.'/img/logo.png';
+
 //incerting emails into db
 $db_connect = mysql_connect("mysql51-060.wc1.ord1.stabletransit.com","947663_memory","Jpv7bTa7dQWw");
 mysql_select_db("947663_memory");
@@ -15,7 +21,8 @@ $pars_emailQuery = "INSERT INTO `contact_emails` VALUES ('', '$nombre', '$trabaj
 $emailQuery = mysql_query($pars_emailQuery);
 
 //envio de mail
-$mailBody = '<p>Nombre: '.$nombre.'</p>';
+$mailBody = '<div style="background: #bf000e;text-align: center;display: inline-block;"><img src="'.$logoSrc.'" style="height:80px;" /></div>';
+$mailBody .= '<p>Nombre: '.$nombre.'</p>';
 if(isset($_POST['empresa']) && $_POST['empresa'] != ''){
 $mailBody .= '<p>Empresa: '.$empresa.'</p>';
 }

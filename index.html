@@ -61,7 +61,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
+          <div class="navbar-brand"><img src="img/logo.png" alt=""></div>
         </div>
       </div><!-- /.container-fluid -->
     </nav>
@@ -97,10 +97,10 @@
         <div class="owl-container uno">
           <h3>Mirá nuestros videos</h3>
           <div id="owl-demo1" class="owl-carousel owl-theme">
-                <div data-toggle="modal" data-target="#myModal" class="modal_videos" data-vid-src="https://www.youtube.com/embed/XNtXNKdWao8?rel=0&amp;showinfo=0">
+                <div data-toggle="modal" data-target="#myModal" class="modal_videos" data-vid-title="Breaking Bad" data-vid-src="https://www.youtube.com/embed/XNtXNKdWao8?rel=0&amp;showinfo=0">
                   <img src="img/boxslide-01.jpg">
                 </div>
-                <div data-toggle="modal" data-target="#myModal" class="modal_videos" data-vid-src="https://www.youtube.com/embed/9sORv1odSyQ?rel=0&amp;showinfo=0">
+                <div data-toggle="modal" data-target="#myModal" class="modal_videos" data-vid-title="Things Girls Do That'd Be Creepy If A Guy Did Them" data-vid-src="https://www.youtube.com/embed/9sORv1odSyQ?rel=0&amp;showinfo=0">
                   <img src="img/boxslide-02.jpg">
                 </div>
                 <div><img src="img/boxslide-03.jpg"></div>
@@ -140,7 +140,7 @@
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title">Breaking Bad</h4>
+              <h4 class="modal-title"></h4>
             </div>
             <div class="modal-body">
               <div class="video-container">
@@ -235,7 +235,7 @@
               <a href="#" class="twitter"></a>
               <a href="#" class="youtube"></a>
           </div>
-          <h3><span>-----&nbsp;&nbsp;</span>Seguí OPINÓLOGOS S.A. en las redes sociales<span>&nbsp;&nbsp;-----</span></h3>
+          <h3><span class="lineas_amarillas"></span>Seguí OPINÓLOGOS S.A. en las redes sociales<span class="lineas_amarillas"></span></h3>
       </footer>
       <!-- /FOOTER -->
 
@@ -308,7 +308,9 @@
 
 function iframePrint(vidSrc){
   var videoSrc = $(vidSrc).data('vid-src'); 
+  var videoTitle = $(vidSrc).data('vid-title'); 
   $('.video-container').html('<iframe src="'+videoSrc+'" frameborder="0" allowfullscreen width="960" height="540"></iframe>');
+  $('.modal-title').html(videoTitle);
 }
 
 function removeIframe(){
