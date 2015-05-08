@@ -1,7 +1,7 @@
 <?php
 //incerting emails into db
-$db_connect = mysql_connect("opinologos.db.11730628.hostedresource.com","opinologos","asd@ASD1");
-mysql_select_db("opinologos");
+$db_connect = mysql_connect("mysql51-060.wc1.ord1.stabletransit.com","947663_memory","Jpv7bTa7dQWw");
+mysql_select_db("947663_memory");
 
 $pars_MailsQuery = "SELECT * FROM `contact_emails`"; 
 $MailsQuery = mysql_query($pars_MailsQuery);
