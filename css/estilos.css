@@ -90,7 +90,7 @@ h3 {
 ----------------------------*/
 .contenedor {
 	padding: 30px 20px;
-	margin-bottom: 60px;
+	margin-bottom: 48px;
 }
 
 /*----------------------------
@@ -216,10 +216,28 @@ textarea.form-control {
 }
 
 /*titulo*/
+.formulario h2{
+	text-align: center;
+	margin-bottom: 0; 
+}
+
+.formulario h2 img{
+	width: 74%;
+	height: auto;
+}
+/*
 .formulario h2 {
 	text-align: center;
-	margin-bottom: 30px;
+	margin-bottom: 0;  
+	font-size: 40px;
+	color: #ffec00;
+	text-shadow: 3px 0 0 #bf000e, -3px 0 0 #bf000e, 0 3px 0 #bf000e, 0 -3px 0 #bf000e, 2px 2px #bf000e, -2px -2px 0 #bf000e, 2px -2px 0 #bf000e, -2px 2px 0 #bf000e;
 }
+
+.formulario h2 span{
+	font-size: 30px;	
+}
+
 .formulario h2 .parte-1,
 .formulario h2 .parte-2 {
 	display: inline-block;
@@ -235,6 +253,8 @@ textarea.form-control {
 	width: 436px;
 	background-position: right;
 }
+
+*/
 .opt{
 	padding:20px;
 }
@@ -265,15 +285,17 @@ textarea.form-control {
 	-webkit-transition: all 0.5s;
 	-o-transition: all 0.5s;
 	transition: all 0.5s;
+  	opacity: 0.65 !important;
 }
 /*boton desactivado si el formulario no es valido*/
 .btn-default.disabled, .btn-default[disabled], fieldset[disabled] .btn-default, .btn-default.disabled:hover, .btn-default[disabled]:hover, fieldset[disabled] .btn-default:hover, .btn-default.disabled:focus, .btn-default[disabled]:focus, fieldset[disabled] .btn-default:focus, .btn-default.disabled.focus, .btn-default[disabled].focus, fieldset[disabled] .btn-default.focus, .btn-default.disabled:active, .btn-default[disabled]:active, fieldset[disabled] .btn-default:active, .btn-default.disabled.active, .btn-default[disabled].active, fieldset[disabled] .btn-default.active {
-	background-color: #D50E1D;
-	color: white;
+	background-color: #bf000e;
+	color: #ffec00;
 	font-weight: 400;
 	-webkit-transition: all 0.5s;
 	-o-transition: all 0.5s;
 	transition: all 0.5s;
+	opacity: 1;
 }
 
 /*estilos para el popup de email enviado*/
@@ -332,6 +354,19 @@ footer span{
 	font-weight:400;
 }
 
+#segui_opinologos_text{
+	text-align: center;
+	margin: 38px 0 12px;
+}
+
+#segui_opinologos_text h3{
+	display: inline-block;
+	vertical-align: middle;
+	max-width: calc(100%/1.6);
+	margin: 0;
+	padding: 0;
+}
+
 .lineas_amarillas{
 	height: 2px;
 	width: 31px;
@@ -339,6 +374,32 @@ footer span{
 	background: #FFED00;
 	display: inline-block;
 	vertical-align: middle;
+}
+
+.red_lines_cont{
+	text-align: center;
+	margin: 14px 0;
+}
+
+.red_lines_cont span{
+	color: #bf000e;
+	font-weight: 100;
+}
+
+.red_line{
+	background: #bf000e;
+	height: 1px;
+	display: inline-block;
+	width: 200px;
+	vertical-align: middle;
+}
+
+.red_text_form{
+	text-align: center;
+	color: #bf000e;
+	margin: 0 0 35px;
+	font-size: 31px;
+	font-family: 'Roboto Condensed', helvetica, arial, sans-serif;
 }
 
 /*REDES SOCIALES*/

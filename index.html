@@ -95,7 +95,7 @@
       <div class="carousels">
         <!-- OWL CAROUSEL 1 -->
         <div class="owl-container uno">
-          <h3>Mirá nuestros videos</h3>
+          <h3>Nuevos Capítulos</h3>
           <div id="owl-demo1" class="owl-carousel owl-theme">
                 <div data-toggle="modal" data-target="#myModal" class="modal_videos" data-vid-title="Breaking Bad" data-vid-src="https://www.youtube.com/embed/XNtXNKdWao8?rel=0&amp;showinfo=0">
                   <img src="img/boxslide-01.jpg">
@@ -116,7 +116,7 @@
 
         <!-- OWL CAROUSEL 2 -->
         <div class="owl-container dos">
-          <h3>Mirá nuestros videos</h3>
+          <h3>Un Día en la Empresa</h3>
           <div id="owl-demo2" class="owl-carousel owl-theme">
                 <div><img src="img/boxslide-01.jpg"></div>
                 <div><img src="img/boxslide-02.jpg"></div>
@@ -163,10 +163,18 @@
       <div class="container-fluid">
         <div class="formulario">
           <h2>
-            <span class="parte-1"></span>
-            <span class="parte-2"></span>
+            <!--
+            LLAMANOS AL <stron>2709 9021</strong> Y DEJANOS TU CONSULTA<br>
+            <span>¡TE ATENDEMOS POSTA! (SI ESTAMOS)</span>
+          -->
+          <img src="img/deja-tu-consulta_todo.png" alt="LLAMANOS AL 2709 9021"/>
           </h2>
-
+          <h3 class="red_lines_cont">
+            <span class="red_line"></span>
+            <span>x</span>
+            <span class="red_line"></span>
+          </h3>
+          <h3 class="red_text_form">SI NO QUERÉS GASTAR UNA LLAMADA, ESCRIBINOS</h3>
           <form role="form" data-toggle="validator" action="email_send.php" method="post">
             <!-- nombre y ocupacion -->
             <div class="row">
@@ -178,13 +186,7 @@
               </div>
               <div class="col-sm-6 col-md-4">
                 <div class="form-group">
-                  <select class="form-control" id="ocupacion" id="trabajode" name="trabajode">
-                    <option value="" class="opt">Trabajo de</option>
-                    <option value="2" class="opt">2</option>
-                    <option value="3" class="opt">3</option>
-                    <option value="4" class="opt">4</option>
-                    <option value="5" class="opt">5</option>
-                  </select>
+                  <input type="text" class="form-control" placeholder="Trabajo de" id="trabajode" name="trabajode">
                   <div class="help-block with-errors"></div>
                 </div>
               </div>
@@ -217,13 +219,15 @@
             </div>
 
             <!-- enviar -->
-            <button type="submit" class="btn btn-default">enviar</button>
+            <button type="submit" class="btn btn-default">LISTO</button>
 
           </form>
         </div>
       </div>
+
       
-    </div><!-- /contenedor -->
+
+      </div><!-- /contenedor -->
     <section id="mail_sended">
       <!--aca se imprime mansaje de email enviado o de error-->
     </section>
@@ -235,7 +239,11 @@
               <a href="#" class="twitter"></a>
               <a href="#" class="youtube"></a>
           </div>
-          <h3><span class="lineas_amarillas"></span>Seguí OPINÓLOGOS S.A. en las redes sociales<span class="lineas_amarillas"></span></h3>
+        <div id="segui_opinologos_text">
+          <span class="lineas_amarillas"></span>
+          <h3>Seguí la Historia</h3> 
+          <span class="lineas_amarillas"></span>
+      </div>
       </footer>
       <!-- /FOOTER -->
 

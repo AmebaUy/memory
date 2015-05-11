@@ -3,7 +3,11 @@
 
 
 @media (max-width: 991px) {
+	.formulario h2 img{
+		width: 85%;
+	}
 
+	.red_line{width: 40%;}
 }
 
 @media (min-width: 768px) {
@@ -14,6 +18,14 @@
 }
 
 @media (max-width: 767px) {
+	.formulario h2 img{
+		width: 95%;
+  		min-height: 80px;
+	}
+
+	.red_text_form{
+		font-size: 26px;
+	}
 	
 	.modal-dialog {
 	  margin: 50px auto;
@@ -83,6 +95,14 @@
 	}
 	.position-fix img {
 		width: 250px;
+	}
+
+	.red_text_form{
+		font-size: 22px;
+	}
+
+	.formulario h2 img{
+		width: 100%;
 	}
 }
 
