@@ -3,11 +3,20 @@
 
 
 @media (max-width: 991px) {
-	.formulario h2 img{
-		width: 85%;
-	}
 
 	.red_line{width: 40%;}
+	.formulario h2 .parte-1 {
+ 		width: 49%;
+  	}
+	.formulario h2 .parte-2 {
+		width: 49%;
+		margin-left: -4px;
+  	}
+
+  	.formulario h2 .parte-3 {
+		width: 64%;
+		position: relative;
+  	}
 }
 
 @media (min-width: 768px) {
@@ -18,10 +27,6 @@
 }
 
 @media (max-width: 767px) {
-	.formulario h2 img{
-		width: 95%;
-  		min-height: 80px;
-	}
 
 	.red_text_form{
 		font-size: 26px;
@@ -37,6 +42,11 @@
 	}
 	.navbar-brand > img {
 		width:250px !important;
+	}
+
+	.redes-sociales_header {
+		right: 8px;  
+		top: 10px;
 	}
 	/*LAYERSLIDER*/
 	.position-fix img {
@@ -62,16 +72,19 @@
 		margin: 0 20px;
 	}
 	/*FORMULARIO*/
-	.formulario h2 .parte-1, .formulario h2 .parte-2 {
-		margin-bottom: -20px;
-	}
+
 	.formulario h2 .parte-1 {
- 		width: 158px;
-  		background-size: 435px;
+ 		width: 49%;
   	}
 	.formulario h2 .parte-2 {
- 		width: 276px;
-  		background-size: 435px;
+		width: 49%;
+		margin-left: -4px;
+  	}
+
+  	.formulario h2 .parte-3 {
+		width: 64%;
+		position: relative;
+		margin-top: -24px;
   	}
   	/*FOOTER*/
   	footer h3 {
@@ -86,6 +99,7 @@
 	.navbar-default {
 	  height: 61px;
 	}
+
 	.navbar-brand > img {
 		width:200px !important;
 	}
@@ -101,9 +115,35 @@
 		font-size: 22px;
 	}
 
-	.formulario h2 img{
-		width: 100%;
+	.redes-sociales_header {
+		right: 8px;  
+		top: 16px;
 	}
+
+	.redes-sociales_header a{
+		width:30px;
+		height:30px;
+		background-size: 90px;
+	}
+}
+
+@media (max-width: 580px){
+	.formulario h2 .parte-1 {
+ 		width: 70%;
+ 		display: block;  
+ 		margin: 0 auto;
+  	}
+	.formulario h2 .parte-2 {
+		width: 70%;
+ 		display: block;  
+ 		margin: -10px auto 13px;
+  	}
+
+  	.formulario h2 .parte-3 {
+		width: 70%;
+		position: relative;
+		margin-top: -24px;
+  	}
 }
 
 @media (max-width: 480px) {
@@ -112,4 +152,21 @@
 		top:0;
 		width: 150px;
 	}
+
+	.formulario h2 .parte-1 {
+ 		width: 86%;
+ 		display: block;  
+ 		margin: 0 auto;
+  	}
+	.formulario h2 .parte-2 {
+		width: 86%;
+ 		display: block;  
+ 		margin: -16px auto 13px;
+  	}
+
+  	.formulario h2 .parte-3 {
+		width: 86%;
+		position: relative;
+		margin-top: -24px;
+  	}
 }

@@ -216,16 +216,7 @@ textarea.form-control {
 }
 
 /*titulo*/
-.formulario h2{
-	text-align: center;
-	margin-bottom: 0; 
-}
 
-.formulario h2 img{
-	width: 74%;
-	height: auto;
-}
-/*
 .formulario h2 {
 	text-align: center;
 	margin-bottom: 0;  
@@ -239,22 +230,35 @@ textarea.form-control {
 }
 
 .formulario h2 .parte-1,
-.formulario h2 .parte-2 {
+.formulario h2 .parte-2, .formulario h2 .parte-3 {
 	display: inline-block;
 	height: 65px;
-	background-image: url('../img/deja-tu-consulta.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 .formulario h2 .parte-1{
-	width: 250px;
+	width: 462px;
 	background-position: left;
+	background-image: url('../img/deja-tu-consulta.png');
 }
 .formulario h2 .parte-2{
-	width: 436px;
+	width: 443px;
+	position: relative;
+	margin-left: -10px;
 	background-position: right;
+	background-image: url('../img/deja-tu-consulta2.png');
 }
 
-*/
+.formulario h2 .parte-3{
+	background-image: url('../img/deja-tu-consulta3.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+}
+
+
 .opt{
 	padding:20px;
 }
@@ -287,6 +291,8 @@ textarea.form-control {
 	transition: all 0.5s;
   	opacity: 0.65 !important;
 }
+
+.ls-bg.ls-preloaded{margin-top: 0 !important;}
 /*boton desactivado si el formulario no es valido*/
 .btn-default.disabled, .btn-default[disabled], fieldset[disabled] .btn-default, .btn-default.disabled:hover, .btn-default[disabled]:hover, fieldset[disabled] .btn-default:hover, .btn-default.disabled:focus, .btn-default[disabled]:focus, fieldset[disabled] .btn-default:focus, .btn-default.disabled.focus, .btn-default[disabled].focus, fieldset[disabled] .btn-default.focus, .btn-default.disabled:active, .btn-default[disabled]:active, fieldset[disabled] .btn-default:active, .btn-default.disabled.active, .btn-default[disabled].active, fieldset[disabled] .btn-default.active {
 	background-color: #bf000e;
@@ -409,15 +415,28 @@ footer span{
   	margin-left: -130px;
   	top: -50px;
 }
-.redes-sociales a {
+.redes-sociales a, .redes-sociales_header a{
 	display: inline-block;
 	width:85px;
 	height:85px;
 	background-image: url('../img/iconos-sociales.png');
 	background-repeat: no-repeat;
 }
-.redes-sociales a.facebook {background-position:left top;}
-.redes-sociales a.twitter {background-position:center top;}
-.redes-sociales a.youtube {background-position:right top;}
+
+.redes-sociales_header {
+	position: absolute;
+	right: 18px;  
+	top: 18px;
+}
+
+.redes-sociales_header a{
+	width:50px;
+	height:50px;
+	background-size: 150px;
+}
+
+.redes-sociales a.facebook, .redes-sociales_header a.facebook {background-position:left top;}
+.redes-sociales a.twitter, .redes-sociales_header a.twitter {background-position:center top;}
+.redes-sociales a.youtube, .redes-sociales_header a.youtube {background-position:right top;}
 /*hover*/
-.redes-sociales a:hover {background-position-y:bottom; }
+.redes-sociales a:hover, .redes-sociales_header a:hover {background-position-y:bottom; }
