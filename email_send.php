@@ -25,6 +25,7 @@ $emailQuery = mysql_query($pars_emailQuery);
 //envio de mail
 $mailBody = '<div style="background: #bf000e;text-align: center;display: inline-block;"><img src="'.$logoSrc.'" style="height:80px;" /></div>';
 $mailBody .= '<p>Nombre: '.$nombre.'</p>';
+$mailBody .= '<p>E-mail: '.$email.'</p>';
 if(isset($_POST['empresa']) && $_POST['empresa'] != ''){
 $mailBody .= '<p>Empresa: '.$empresa.'</p>';
 }
