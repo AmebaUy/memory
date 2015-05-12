@@ -169,4 +169,17 @@
 		position: relative;
 		margin-top: -24px;
   	}
+
+	.redes-sociales_header a.facebook, .redes-sociales_header a.twitter {
+		display:none;
+	}
+	
+	h3 {
+		padding:0px;
+	}
+}	
+@media (max-width: 320px) {	
+	footer h3 {
+	  font-size: 1.2em;
+	}
 }
