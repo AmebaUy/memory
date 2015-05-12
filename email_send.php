@@ -18,7 +18,9 @@ $db_connect = mysql_connect("mysql51-060.wc1.ord1.stabletransit.com","947663_mem
 mysql_select_db("947663_memory");
 
 $pars_emailQuery = "INSERT INTO `contact_emails` VALUES ('', '$nombre', '$trabajode', '$email', '$empresa', '$mensaje')";
+mysql_query("SET NAMES 'utf8'");
 $emailQuery = mysql_query($pars_emailQuery);
+
 
 //envio de mail
 $mailBody = '<div style="background: #bf000e;text-align: center;display: inline-block;"><img src="'.$logoSrc.'" style="height:80px;" /></div>';

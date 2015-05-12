@@ -4,6 +4,7 @@ $db_connect = mysql_connect("mysql51-060.wc1.ord1.stabletransit.com","947663_mem
 mysql_select_db("947663_memory");
 
 $pars_MailsQuery = "SELECT * FROM `contact_emails`"; 
+mysql_query("SET NAMES 'utf8'");
 $MailsQuery = mysql_query($pars_MailsQuery);
 
 ?>
