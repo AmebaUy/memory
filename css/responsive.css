@@ -1,7 +1,3 @@
-
-
-
-
 @media (max-width: 991px) {
 
 	.red_line{width: 40%;}
@@ -27,7 +23,10 @@
 }
 
 @media (max-width: 767px) {
-
+	#menssage_box{
+		width: 50vw;
+		height: 50vw;
+	}
 	.red_text_form{
 		font-size: 26px;
 	}
@@ -94,6 +93,7 @@
 
 
 @media (max-width: 640px) {
+
 
 	/*NAVBAR*/
 	.navbar-default {

@@ -13,6 +13,19 @@ html,body {
 	font-size: 1em;
 }
 
+.cont_1, .cont_2{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.cont_1{
+	width: 45%;
+}
+
+.cont_2{
+	width: 54%;
+}
+
 /*----------------------------
 		    TITULOS
 ----------------------------*/
@@ -22,9 +35,19 @@ h1,h2,h3,h4,h5,h6 {
 h3 {
 	font-weight: 600;
 	font-size:1.6em;
-	padding: 0 20px;
+	padding: 0;
+	color:#bd000e;
+	margin-bottom: 20px;
 }
 
+.owl-container h3{
+	padding: 0 12px;
+	color: #333;
+}
+
+p{
+	color: #9b9b9a;
+}
 /*----------------------------
 			NAVBAR
 ----------------------------*/
@@ -60,6 +83,25 @@ h3 {
 /*----------------------------
 		  LAYERSLIDER
 ----------------------------*/
+.ls-v5 .ls-nav-prev, .ls-v5 .ls-nav-next {
+  width: 70px !important;
+  height: 70px !important;
+  z-index: 10000;
+  top: 50%;
+  margin-top: -25px;
+  position: absolute;
+}
+
+.ls-v5 .ls-nav-next, .ls-v5 .ls-nav-next:hover {
+  background-position: -128px 0px !important;
+  right: 2px !important
+}
+
+.ls-v5 .ls-nav-prev, .ls-v5 .ls-nav-prev:hover {
+  background-position: -3px 0px !important;
+  left: 2px !important;
+}
+
 
 /*fix to position layer to the right*/
 .position-fix {
@@ -69,11 +111,11 @@ h3 {
 }
 .position-fix img {
 	position: absolute;
-	right:0;
+	right: 1%;
 }
 /*agrandar imagenes con links en hover*/
 .opacity img {
-	opacity: 0.8;
+	opacity: 1;
 }
 .opacity:hover img {
 	opacity: 1;
@@ -88,14 +130,22 @@ h3 {
 /*----------------------------
 		  CONTAINER
 ----------------------------*/
-.contenedor {
-	padding: 30px 20px;
+.contenedor{
+	padding: 30px 50px;
 	margin-bottom: 48px;
+}
+
+.contenedor2{
+	padding: 30px 50px 85px 50px;
+	border-top: solid 2px #d8d8d8;
+	background: #f4f4f4;
 }
 
 /*----------------------------
 		  OWL CAROUSEL
 ----------------------------*/
+
+
 .carousels {padding: 0 50px;}
 .owl-carousel .owl-wrapper-outer {
 	/*prevent navigation buuttons overlapping*/
@@ -114,8 +164,8 @@ h3 {
 	text-align: center;
 }
 .owl-carousel .owl-item img{
-	width: 90%;
-	opacity: 0.8;
+	/*width: 90%;*/
+	opacity: 1;
 	transition: opacity 0.2s;
 }
 div[data-toggle="modal"] {
@@ -123,9 +173,12 @@ div[data-toggle="modal"] {
 }
 /*efecto hover*/
 .owl-carousel .owl-item:hover img {
-	opacity: 1;
+	opacity: 0.8;
 }
 
+.modal-backdrop.in{
+	opacity: 0.2;
+}
 /*pagination*/
 .owl-pagination {display: none;}
 .owl-buttons {  
@@ -195,6 +248,10 @@ div[data-toggle="modal"] {
     height: 100%;
 }
 
+#layerslider{
+	width: 100vw !important;
+	height: 49.70vw !important;
+}
 /*----------------------------
 		  FORMULARIO
 ----------------------------*/
@@ -304,11 +361,19 @@ textarea.form-control {
 .btn-default.disabled, .btn-default[disabled], fieldset[disabled] .btn-default, .btn-default.disabled:hover, .btn-default[disabled]:hover, fieldset[disabled] .btn-default:hover, .btn-default.disabled:focus, .btn-default[disabled]:focus, fieldset[disabled] .btn-default:focus, .btn-default.disabled.focus, .btn-default[disabled].focus, fieldset[disabled] .btn-default.focus, .btn-default.disabled:active, .btn-default[disabled]:active, fieldset[disabled] .btn-default:active, .btn-default.disabled.active, .btn-default[disabled].active, fieldset[disabled] .btn-default.active {
 	background-color: #bf000e;
 	color: #ffec00;
-	font-weight: 400;
+	font-weight: bold;
+	font-size: 27px;
+	padding: 5px;
 	-webkit-transition: all 0.5s;
 	-o-transition: all 0.5s;
 	transition: all 0.5s;
 	opacity: 1;
+}
+
+button.btn:hover{
+	background-color: #ffec00 !important;
+	color: #bf000e !important;
+	opacity: 1 !important;
 }
 
 /*estilos para el popup de email enviado*/
@@ -327,16 +392,31 @@ textarea.form-control {
 
 #menssage_box{
 	position: absolute;
-	background: #fff;
-	padding: 50px;
+	background: url(../img/pop-up.jpg) center no-repeat;
+		background-size: cover;
+	width: 30vw;
+	height: 30vw;
 	opacity: 0;
     transition: all 0.5s;
 }
 
-#menssage_box h3{
-	color: #BF000E;
-	margin: 0;
+#popup_close{
+	position: absolute;
+	background: url(../img/pop-up_close.png) center no-repeat;
+		background-size: cover;
+	width: 10%;
+	height: 10%;
+	top: 3%;
+	right: 3%;
+	cursor: pointer;
+    transition: all 0.5s;
 }
+
+#popup_close:hover{
+	background: url(../img/pop-up_close_over.png) center no-repeat;
+		background-size: cover;
+}
+
 /*----------------------------
 		   FOOTER
 ----------------------------*/
@@ -378,6 +458,8 @@ footer span{
 	max-width: calc(100%/1.6);
 	margin: 0;
 	padding: 0;
+	color: #fff;
+	font-weight: 400;
 }
 
 .lineas_amarillas{
