@@ -83,6 +83,11 @@ p{
 /*----------------------------
 		  LAYERSLIDER
 ----------------------------*/
+img.ls-preloaded {
+  right: -19px !important;
+  position: absolute;
+}
+
 .ls-v5 .ls-nav-prev, .ls-v5 .ls-nav-next {
   width: 70px !important;
   height: 70px !important;
