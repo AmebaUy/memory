@@ -24,5 +24,9 @@ while($mailList = mysql_fetch_array($MailsQuery))
 }
 ?>
 </table>
+<br>
+<form method="post" action="export.php">
+<button type="submit">Guardar tabla
+</button>
 
-<a href="export.php"> export the database table </a>
+</form>

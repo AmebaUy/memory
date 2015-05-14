@@ -2,45 +2,50 @@
 $db_connect = mysql_connect("mysql51-060.wc1.ord1.stabletransit.com","947663_memory","Jpv7bTa7dQWw");
 mysql_select_db("947663_memory");
 
-//header to give the order to the browser
-header('Content-Type: text/csv');
-header('Content-Disposition: attachment;filename=exported-data.csv');
 
-//select table to export the data
-$pars_MailsQuery = "SELECT * FROM `contact_emails`"; 
-$select_table=mysql_query($pars_MailsQuery);
-$rows = mysql_fetch_assoc($select_table);
 
-if ($rows)
+$SQL = "SELECT * FROM `contact_emails`";
+$header = '';
+$result ='';
+$exportData = mysql_query ($SQL ) or die ( "Sql error : " . mysql_error( ) );
+ 
+$fields = mysql_num_fields ( $exportData );
+ 
+for ( $i = 0; $i < $fields; $i++ )
 {
-getcsv(array_keys($rows));
+    $header .= mysql_field_name( $exportData , $i ) . "\t";
 }
-while($rows)
+ 
+while( $row = mysql_fetch_row( $exportData ) )
 {
-getcsv($rows);
-$rows = mysql_fetch_assoc($select_table);
+    $line = '';
+    foreach( $row as $value )
+    {                                            
+        if ( ( !isset( $value ) ) || ( $value == "" ) )
+        {
+            $value = "\t";
+        }
+        else
+        {
+            $value = str_replace( '"' , '""' , $value );
+            $value = '"' . $value . '"' . "\t";
+        }
+        $line .= $value;
+    }
+    $result .= trim( $line ) . "\n";
 }
-
-// get total number of fields present in the database
-function getcsv($no_of_field_names)
+$result = str_replace( "\r" , "" , $result );
+ 
+if ( $result == "" )
 {
-$separate = '';
-
-
-// do the action for all field names as field name
-foreach ($no_of_field_names as $field_name)
-{
-if (preg_match('/\\r|\\n|,|"/', $field_name))
-{
-$field_name = '' . str_replace('', $field_name) . '';
+    $result = "\nNo Record(s) Found!\n";                        
 }
-echo $separate . $field_name;
+ 
+header("Content-type: application/octet-stream");
+header("Content-Disposition: attachment; filename=emails_".date('j/n/Y').".xls");
+header("Pragma: no-cache");
+header("Expires: 0");
+print "$header\n$result";
 
-//sepearte with the comma
-$separate = ',';
-}
 
-//make new row and line
-echo "\r\n";
-}
 ?>
