@@ -122,7 +122,7 @@ p{
 }
 /*ocultar navegacion inferior*/
 .ls-bottom-nav-wrapper {
-	display: none;
+	/*display: none;*/
 }
 
 
@@ -249,7 +249,7 @@ div[data-toggle="modal"] {
 }
 
 #layerslider{
-	width: 100vw !important;
+	width: 100% !important;
 	height: 49.70vw !important;
 }
 /*----------------------------
