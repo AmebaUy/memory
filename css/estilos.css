@@ -20,7 +20,7 @@ html,body {
 
 .cont_1{
 	width: 45%;
-	padding-left: 25px;
+	padding-left: 28px;
 }
 
 .cont_2{
@@ -97,6 +97,10 @@ img.ls-preloaded {
   top: 50%;
   margin-top: -25px;
   position: absolute;
+}
+
+.ls-v5 .ls-nav-prev:hover, .ls-v5 .ls-nav-next:hover{
+	opacity: 0.5;
 }
 
 .ls-v5 .ls-nav-next, .ls-v5 .ls-nav-next:hover {
