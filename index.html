@@ -102,7 +102,7 @@
         Nunc pellentesque ut nisi quis iaculis. Nunc dictum nec lacus id auctor. Suspendisse pellentesque lobortis ipsum at finibus. Donec dui leo, tempus eu vehicula ac, hendrerit ac enim. Cras id leo a massa tempus aliquet. Quisque diam ipsum, ultrices vel semper et, elementum sit amet est. In nisi ante, scelerisque a placerat sit amet, ullamcorper malesuada odio. Mauris laoreet commodo imperdiet. Ut ac enim a libero sagittis faucibus. Praesent eget orci vel risus viverra dictum non quis tortor. Vestibulum consectetur elit at dui dapibus, placerat pretium turpis congue. Donec ultricies tellus nec leo auctor accumsan. Sed eleifend mauris in quam placerat, quis mollis turpis vehicula.<br>
         Donec cursus ex id nisl malesuada sodales. Vestibulum pretium malesuada turpis, nec porta dui malesuada quis. Fusce et mattis risus. Nullam congue pharetra lobortis. Aliquam rhoncus auctor cursus. Duis nec ultrices neque, eget venenatis est. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In pulvinar, neque eget tincidunt sollicitudin, augue justo luctus lorem, eleifend venenatis nisi massa malesuada sem. Pellentesque ipsum sapien, pellentesque id metus sit amet, eleifend vestibulum massa.</p>
       </section>
-      <section class="cont_2" style="float: right;">
+      <section class="cont_2">
         <div class="carousels">
           <!-- OWL CAROUSEL 1 -->
           <div class="owl-container uno">
@@ -150,28 +150,8 @@
           </div>
         </div>
       </div><!-- /.modal -->
-<!--
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title"></h4>
-            </div>
-            <div class="modal-body">
-              <div class="video-container">
-              </div>
 
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-          </div>
-        </div>
-      </div>
--->
-     </div>
+     </div><!--end concontenedor-->
 
      <div class="contenedor2">
 
@@ -179,9 +159,7 @@
       <div class="container-fluid">
         <div class="formulario">
           <h2>
-          <span class="parte-1"></span>
-          <span class="parte-2"></span>
-          <span class="parte-3"></span>
+          <span class="call_title"></span>
           </h2>
           <h3 class="red_lines_cont">
             <span class="red_line"></span>
@@ -339,14 +317,7 @@
 
     //sliderAspectRatio();
     fSendMessage();
-    //fix thumbnail width problems
-    thumbWidthFix();
   });
-
-function thumbWidthFix(){
-  var fixedWidth = Math.round($('.modal_videos').outerWidth() * 0.9);
-  $('.owl-carousel .owl-item img').css('width', fixedWidth+'px');
-}
 
 
 function iframePrint(vidSrc){

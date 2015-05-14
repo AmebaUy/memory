@@ -13,6 +13,12 @@
 		width: 64%;
 		position: relative;
   	}
+
+  	.cont_1, .cont_2{
+  		width: 100%;
+  	}
+
+  	.cont_2{float: none;}
 }
 
 @media (min-width: 768px) {
@@ -28,7 +34,7 @@
 		height: 50vw;
 	}
 	.red_text_form{
-		font-size: 26px;
+		font-size: 22px;
 	}
 	
 	.modal-dialog {
@@ -89,11 +95,20 @@
   	footer h3 {
   		font-size: 1.5em;
   	}
+
+  	.red_lines_cont {
+		margin: -4px 0 17px 0;
+	}
 }
 
 
 @media (max-width: 640px) {
-
+	.call_title {
+		height: 47px;
+		margin-left: -14%;
+		width: 130%;
+		position: relative;
+	}
 
 	/*NAVBAR*/
 	.navbar-default {
