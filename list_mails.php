@@ -24,3 +24,5 @@ while($mailList = mysql_fetch_array($MailsQuery))
 }
 ?>
 </table>
+
+<a href="export.php"> export the database table </a>

@@ -172,7 +172,7 @@ img.ls-preloaded {
 .owl-carousel .owl-item img{
 	width: 90%;
 	opacity: 1;
-	transition: opacity 0.2s;
+	/*transition: all 0.2s;*/
 }
 div[data-toggle="modal"] {
 	cursor: pointer;

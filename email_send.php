@@ -43,7 +43,8 @@ $mail->setFrom($email, $nombre);
 //Set an alternative reply-to address
 $mail->addReplyTo($email, $nombre);
 //Set who the message is to be sent to
-$mail->addAddress('lmartinez@ameba.com.uy', 'Lucía');
+//$mail->addAddress('lmartinez@ameba.com.uy', 'Lucía');
+$mail->addAddress('novoanpablo@gmail.com', 'Lucía');
 //encoding utf-8
 $mail->CharSet = 'UTF-8';
 //Set the subject line
