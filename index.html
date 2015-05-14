@@ -343,16 +343,7 @@ function iframePrint(vidSrc){
 function removeIframe(){
   $('.video-container').html('');
 }
-/*
-function sliderAspectRatio(){
-  var sliderWidth = window.innerWidth;
-  var sliderHeight = window.innerWidth / 2.012;
-  $('#layerslider').css({
-    'width': sliderWidth+'px !important',
-    'height': sliderHeight+'px !important'
-    });
-}
-*/
+
 function fSendMessage(){
 
   var ruta = window.location.href;
@@ -364,7 +355,7 @@ function fSendMessage(){
     }
 
     if(sendStatus == 'not'){
-      $('#mail_sended').html('<div id="menssage_box"><h3>Error al enviar el mensaje</h3></div>');
+      $('#mail_sended').html('<div id="menssage_box" class="not_send"><span id="popup_close"></span></div>');
     }
       $('#mail_sended').css('display','block');
 

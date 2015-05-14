@@ -401,6 +401,10 @@ button.btn:hover{
     transition: all 0.5s;
 }
 
+#menssage_box.not_send{
+	background: url(../img/pop-up_not.jpg) center no-repeat;
+}
+
 #popup_close{
 	position: absolute;
 	background: url(../img/pop-up_close.png) center no-repeat;
