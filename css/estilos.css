@@ -446,17 +446,11 @@ button.btn:hover{
 		   FOOTER
 ----------------------------*/
 footer {
-<<<<<<< HEAD
-	background-image:url(../img/texture.jpg);	
-	background-color: #bf000e;
-	color:white;
-=======
 	float: left;
 	width: 100%;
 	background-color:#bf000e;
 	background-image: url(../img/texture.jpg);
 	color: white;
->>>>>>> origin/master
 	padding: 35px 15px 15px 15px;
 	text-align: center;
 	position: relative;
