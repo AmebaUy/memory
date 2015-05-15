@@ -141,6 +141,9 @@
 	img.ls-preloaded {
 	  right: -5px !important;
 	}
+	.ls-v5 .ls-nav-prev, .ls-v5 .ls-nav-next {
+	  display: none !important;
+	}
 
 	.red_text_form{
 		font-size: 22px;
