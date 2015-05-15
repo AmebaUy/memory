@@ -2,6 +2,9 @@
 .position-fix {
 	width: 300px !important;
 }
+.cont_1 p {
+	font-size: 0.77em;
+}
 }
 
 @media screen and (max-width: 991px) {
@@ -120,10 +123,7 @@
 
 @media screen and (max-width: 639px) {
 	.call_title {
-		height: 47px;
-		margin-left: -14%;
-		width: 130%;
-		position: relative;
+		background-image: url(../img/deja-tu-consulta-responsive.png);
 	}
 
 	/*NAVBAR*/
