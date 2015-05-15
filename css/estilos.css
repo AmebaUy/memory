@@ -229,7 +229,7 @@ div[data-toggle="modal"] {
 }
 .owl-next {
   	right: -40px;
-  	background-position-x: right !important;
+  	background-position: right !important;
 }
 
 
