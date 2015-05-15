@@ -54,15 +54,20 @@ h3 {
 	color: #333;
 }
 
+p{
+	color: #818084;
+}
+
 .cont_1 p {
 	font-family:'Open Sans', Helvetica, Arial, sans-serif; 
 	font-size: 0.9em;
 	line-height: 1.9em;
 }
-
-p{
-	color: #9b9b9a;
-}
+	.cont_1 p b{
+		font-weight: 600;
+		color: #504f53;
+	}
+	
 /*----------------------------
 			NAVBAR
 ----------------------------*/
