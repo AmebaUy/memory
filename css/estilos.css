@@ -105,7 +105,7 @@ img.ls-preloaded {
 .ls-v5 .ls-nav-prev, .ls-v5 .ls-nav-next {
   width: 70px !important;
   height: 70px !important;
-  z-index: 10000;
+  z-index: 2;
   top: 50%;
   margin-top: -25px;
   position: absolute;
