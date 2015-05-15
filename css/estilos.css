@@ -62,6 +62,7 @@ p{
 .navbar-default {
 	height: 85px;
 	border:none;
+	background-image:url(../img/texture.jpg);	
 	background-color: #bf000e;
 }
 .navbar-header {
@@ -188,7 +189,7 @@ div[data-toggle="modal"] {
 }
 
 .modal-backdrop.in{
-	opacity: 0.2;
+	opacity: 0.9;
 }
 /*pagination*/
 .owl-pagination {display: none;}
@@ -360,6 +361,7 @@ textarea.form-control {
 
 /*boton desactivado si el formulario no es valido*/
 .btn-default.disabled, .btn-default[disabled], fieldset[disabled] .btn-default, .btn-default.disabled:hover, .btn-default[disabled]:hover, fieldset[disabled] .btn-default:hover, .btn-default.disabled:focus, .btn-default[disabled]:focus, fieldset[disabled] .btn-default:focus, .btn-default.disabled.focus, .btn-default[disabled].focus, fieldset[disabled] .btn-default.focus, .btn-default.disabled:active, .btn-default[disabled]:active, fieldset[disabled] .btn-default:active, .btn-default.disabled.active, .btn-default[disabled].active, fieldset[disabled] .btn-default.active {
+	background-image:url(../img/texture.jpg);	
 	background-color: #bf000e;
 	color: #ffec00;
 	font-weight: bold;
@@ -373,6 +375,7 @@ textarea.form-control {
 
 button.btn:hover{
 	background-color: #ffec00 !important;
+	background-image:none !important;
 	color: #bf000e !important;
 	opacity: 1 !important;
 }
@@ -394,7 +397,7 @@ button.btn:hover{
 #menssage_box{
 	position: absolute;
 	background: url(../img/pop-up.jpg) center no-repeat;
-		background-size: cover;
+	background-size: contain;
 	width: 30vw;
 	height: 30vw;
 	opacity: 0;
@@ -403,6 +406,7 @@ button.btn:hover{
 
 #menssage_box.not_send{
 	background: url(../img/pop-up_not.jpg) center no-repeat;
+	background-size: contain;
 }
 
 #popup_close{
@@ -426,7 +430,8 @@ button.btn:hover{
 		   FOOTER
 ----------------------------*/
 footer {
-	background-color:#bf000e;
+	background-image:url(../img/texture.jpg);	
+	background-color: #bf000e;
 	color:white;
 	padding: 35px 15px 15px 15px;
 	text-align: center;
