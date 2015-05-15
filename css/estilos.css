@@ -237,6 +237,7 @@ div[data-toggle="modal"] {
 		     MODAL
 ----------------------------*/
 .modal {
+	z-index: 9999999;
 	padding-right:0 !important;
 }
 .modal-body {
