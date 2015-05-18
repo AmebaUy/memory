@@ -38,8 +38,6 @@
     <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
     <!-- Owl Carousel Default Theme -->
     <link rel="stylesheet" href="owl-carousel/owl.theme.css">
-    <!-- lightbox -->
-    <link href="css/css-lightbox.css" rel="stylesheet" type="text/css"/>
     <!-- Estilos -->
     <link href="css/estilos.css" rel="stylesheet">
     <!-- Responsive -->
@@ -52,6 +50,27 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+	<!-- Add mousewheel plugin (this is optional) -->
+	<script type="text/javascript" src="js/jquery.mousewheel-3.0.6.pack.js"></script>
+
+	<!-- Add fancyBox main JS and CSS files -->
+	<script type="text/javascript" src="js/jquery.fancybox.js?v=2.1.5"></script>
+	<link rel="stylesheet" type="text/css" href="js/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+	<!-- Add Button helper (this is optional) -->
+	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox-buttons.css?v=1.0.5" />
+	<script type="text/javascript" src="js/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+
+	<!-- Add Thumbnail helper (this is optional) -->
+	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox-thumbs.css?v=1.0.7" />
+	<script type="text/javascript" src="js/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+	<!-- Add Media helper (this is optional) -->
+	<script type="text/javascript" src="js/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
     
     <!--Google Analitics Script-->
     <script>
@@ -123,7 +142,16 @@
                   <img src="img/slider-01-img-b.png">
                 </a>
             </div>
-        </div>             
+        </div>
+        <!-- slide 5 -->
+        <div class="ls-slide" data-ls="slidedelay:4000; transition2d:2;">
+            <img src="img/slider-05.jpg" class="ls-bg" alt="Slide background" style="width: 100% !important; height:100% !important;">
+            <div class="position-fix ls-l"> 
+                <a href="http://www.solucionesmemory.com/" target="_blank" class="opacity">
+                  <img src="img/slider-01-img-b.png">
+                </a>
+            </div>
+        </div>                 
       </div> <!-- /LAYERSLIDER -->
 
 
@@ -146,12 +174,12 @@ No somos Memory!</b></p>
           <div class="owl-container uno">
             <h3>Nuevos Capítulos</h3>
             <div id="owl-demo1" class="owl-carousel owl-theme">
-                  <div data-toggle="modal" data-target="#myModal" class="modal_videos" data-vid-src="https://www.youtube.com/embed/XNtXNKdWao8?rel=0&amp;showinfo=0">
-                    <img src="img/boxslide-01.jpg">
-                  </div>
-                 <!-- <div data-toggle="modal" data-target="#myModal" class="modal_videos" data-vid-src="https://www.youtube.com/embed/9sORv1odSyQ?rel=0&amp;showinfo=0">
+                  <a href="https://www.youtube.com/watch?v=XNtXNKdWao8" class="youtube" rel="videos">
+                    <img src="img/miniaturas_video_01.jpg">
+                  </a>
+                  <!-- <a href="http://www.youtube.com/watch?v=9sORv1odSyQ" class="youtube" rel="videos">
                     <img src="img/boxslide-02.jpg">
-                  </div>
+                  </a>
                   <div><img src="img/boxslide-01.jpg"></div>
                   <div><img src="img/boxslide-02.jpg"></div>-->
             </div><!-- /owl-demo1 -->
@@ -162,13 +190,18 @@ No somos Memory!</b></p>
             <h3>Un Día en la Empresa</h3>
           <div id="owl-demo2" class="owl-carousel owl-theme">
               <div>
-                  <a href="img/slider-04.jpg" data-lightbox="image">
-                      <img src="img/boxslide-03.png">
+                  <a class="fancybox-image" rel="group" href="img/foto_grande_01.jpg">
+                      <img src="img/miniaturas_01.png">
                   </a>
               </div>
               <div>
-                  <a href="img/boxslide-04.png" data-lightbox="image">
-                      <img src="img/boxslide-04.png">
+                  <a class="fancybox-image" rel="group" href="img/foto_grande_02.jpg">
+                      <img src="img/miniaturas_02.png">
+                  </a>
+              </div>
+              <div>
+                  <a class="fancybox-image" rel="group" href="img/foto_grande_03.jpg">
+                      <img src="img/miniaturas_03.png">
                   </a>
               </div>
           </div><!-- /owl-demo2 -->
@@ -287,8 +320,7 @@ No somos Memory!</b></p>
 
                         
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <!-- External libraries: GreenSock -->
@@ -298,10 +330,41 @@ No somos Memory!</b></p>
     <!-- LayerSlider script files -->
     <script src="layerslider/js/layerslider.transitions.js" type="text/javascript"></script>
     <script src="layerslider/js/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
-    <!-- lightbox -->
-    <script type="text/javascript" src="js/lightbox-2.6.min.js"></script>
     <!-- form validator -->
     <script src="js/validator.min.js" type="text/javascript"></script>
+
+<!-- Light box -->
+<script type="text/javascript">
+	$(".fancybox-image").fancybox({
+		'prevEffect'		: 'none',
+		'nextEffect'		: 'none',
+		'transitionIn'  : 'none',
+		'transitionOut' : 'none',
+		'width'     : 1800,
+		'height'    : 1066,
+		'aspectRatio': true
+	});
+	$(".fancybox").fancybox();
+	$("a.youtube").click(function(){
+    	$.fancybox({
+			'padding'       : 0,
+			'autoScale'     : false,
+			'transitionIn'  : 'none',
+			'transitionOut' : 'none',
+			'title'         : this.title,
+			'width'     : 1800,
+			'height'    : 1011,
+			'aspectRatio': true,
+			'href'      : this.href.replace(new RegExp("watch\\?v=", "i"), 'v/'),
+			'type'      : 'swf',
+			'swf'       : {
+				 'wmode'    : 'transparent',
+				'allowfullscreen': 'true'
+         }
+	});
+    return false;
+});
+</script>
 
 <!-- Layerslider -->
 <script>
@@ -363,10 +426,6 @@ $(function() {
     //remover texto 'prev y next'
     $('.owl-prev,.owl-next').empty();
 
-    //imprime el iframe
-    $('.modal_videos').click(function(){
-        iframePrint(this);
-    });
     //remueve el iframe
     //$('.modal-header .close').click(removeIframe);myModal
     $('#myModal').click(removeIframe);
@@ -375,17 +434,6 @@ $(function() {
     fSendMessage();
   });
 
-
-function iframePrint(vidSrc){
-  var videoSrc = $(vidSrc).data('vid-src'); 
-  var videoTitle = $(vidSrc).data('vid-title'); 
-  $('.video-container').html('<iframe src="'+videoSrc+'" frameborder="0" allowfullscreen width="960" height="auto"></iframe>');
-  $('.modal-title').html(videoTitle);
-}
-
-function removeIframe(){
-  $('.video-container').html('');
-}
 
 function fSendMessage(){
 
