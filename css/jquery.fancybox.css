@@ -275,22 +275,22 @@
 
 	.fancybox-close {
 		background-image:url(../img/fancy_close@2x.png);
-		background-size: 54px 54px; /*The size of the normal image, half the size of the hi-res image*/
+		background-size: 27px 27px; /*The size of the normal image, half the size of the hi-res image*/
 	}
 	
 	.fancybox-close:hover {
 		background-image:url(../img/fancy_close_hover@2x.png);
-		background-size: 54px 54px; /*The size of the normal image, half the size of the hi-res image*/
+		background-size: 27px 27px; /*The size of the normal image, half the size of the hi-res image*/
 	}
 
 	.fancybox-prev span {
 		background-image:url(../img/fancy_prev@2x.png);
-		background-size: 72px 68px; /*The size of the normal image, half the size of the hi-res image*/
+		background-size: 36px 34px; /*The size of the normal image, half the size of the hi-res image*/
 	}
 	
 	.fancybox-next span {
 		background-image:url(../img/fancy_next@2x.png);
-		background-size: 72px 68px; /*The size of the normal image, half the size of the hi-res image*/
+		background-size: 36px 34px; /*The size of the normal image, half the size of the hi-res image*/
 	}	
 	
 	#fancybox-loading div {
