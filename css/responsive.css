@@ -7,6 +7,21 @@
 }
 }
 
+@media screen and (max-width: 1023px) {
+    .fancybox-next span,
+    .fancybox-prev span {
+        visibility: visible !important;
+        transition: opacity 0.3s;
+    }
+    .fancybox-next:hover span,
+    .fancybox-prev:hover span {
+        opacity: 0.5;
+    }
+
+    .fancybox-close{display: none;}
+}
+
+
 @media screen and (max-width: 991px) {
 
 	.red_line{width: 40%;}
